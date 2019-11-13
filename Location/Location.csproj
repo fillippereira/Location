@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Storage\**" />
+    <Compile Remove="wwwroot\Storage\0bfc7c8c-6132-4b9d-8082-d1c34c9847e5\**" />
+    <Compile Remove="wwwroot\Storage\313c7027-40ee-41fd-bc45-c35282076432\**" />
+    <Compile Remove="wwwroot\Storage\3427d7d6-5e9e-45f7-bc17-0518b137b6d8\**" />
+    <Compile Remove="wwwroot\Storage\8d8770bf-ddf5-4a59-bce1-63a618767968\**" />
+    <Content Remove="Storage\**" />
+    <Content Remove="wwwroot\Storage\0bfc7c8c-6132-4b9d-8082-d1c34c9847e5\**" />
+    <Content Remove="wwwroot\Storage\313c7027-40ee-41fd-bc45-c35282076432\**" />
+    <Content Remove="wwwroot\Storage\3427d7d6-5e9e-45f7-bc17-0518b137b6d8\**" />
+    <Content Remove="wwwroot\Storage\8d8770bf-ddf5-4a59-bce1-63a618767968\**" />
+    <EmbeddedResource Remove="Storage\**" />
+    <EmbeddedResource Remove="wwwroot\Storage\0bfc7c8c-6132-4b9d-8082-d1c34c9847e5\**" />
+    <EmbeddedResource Remove="wwwroot\Storage\313c7027-40ee-41fd-bc45-c35282076432\**" />
+    <EmbeddedResource Remove="wwwroot\Storage\3427d7d6-5e9e-45f7-bc17-0518b137b6d8\**" />
+    <EmbeddedResource Remove="wwwroot\Storage\8d8770bf-ddf5-4a59-bce1-63a618767968\**" />
+    <None Remove="Storage\**" />
+    <None Remove="wwwroot\Storage\0bfc7c8c-6132-4b9d-8082-d1c34c9847e5\**" />
+    <None Remove="wwwroot\Storage\313c7027-40ee-41fd-bc45-c35282076432\**" />
+    <None Remove="wwwroot\Storage\3427d7d6-5e9e-45f7-bc17-0518b137b6d8\**" />
+    <None Remove="wwwroot\Storage\8d8770bf-ddf5-4a59-bce1-63a618767968\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Storage\5f5fbffd-fc74-4d92-8c63-c43291428c76.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Storage\" />
+  </ItemGroup>
+
+</Project>

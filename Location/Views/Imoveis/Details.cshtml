@@ -1,0 +1,129 @@
+﻿@model Location.Models.Imovel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes do Imóvel</h2>
+
+<div class="row">
+    
+    <hr />
+    <div class="col-md-7">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Tipo.Id)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.QUartos)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.QUartos)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Banheiros)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Banheiros)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Vagas)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Vagas)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Area)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Area)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Endereco)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Numero)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Numero)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CEP)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CEP)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Bairro)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Cidade)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Uf)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Uf)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="col-md-5">
+        <div id="demo" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner">
+
+                @{
+                    var posicao = 1;
+                    foreach (var foto in Model.Fotos)
+                    {
+                        if (posicao == 1)
+                        {
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="~/Storage/@Model.Id/@foto.Caminho">
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="~/Storage/@Model.Id/@foto.Caminho">
+                            </div>
+                        }
+                        posicao++;
+                    }
+                }
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-light">Voltar</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Atualizar</a> 
+</div>
