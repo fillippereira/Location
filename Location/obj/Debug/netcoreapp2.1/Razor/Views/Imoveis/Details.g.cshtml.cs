@@ -321,7 +321,7 @@ using Location.Models;
             WriteLiteral("                            <div class=\"carousel-item active\">\r\n                                ");
             EndContext();
             BeginContext(2979, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fef93cf0237e42c8954997f67c82cdc7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "34e31d67f4d445638cd9e0d5b09365cc", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -363,7 +363,7 @@ AddHtmlAttributeValue("", 3031, foto.Caminho, 3031, 13, false);
             WriteLiteral("                            <div class=\"carousel-item\">\r\n                                ");
             EndContext();
             BeginContext(3257, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8bfd1941ea4d4b1d863a017560443066", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6ec0bd30a3fd46ef889aed39adcfe9b8", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -421,7 +421,7 @@ AddHtmlAttributeValue("", 3309, foto.Caminho, 3309, 13, false);
     ");
             EndContext();
             BeginContext(3910, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3a1831b455e43b4a36170ac5c3dc594", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42f5a0359b324f7f86258d5940684540", async() => {
                 BeginContext(3954, 6, true);
                 WriteLiteral("Voltar");
                 EndContext();
@@ -444,7 +444,7 @@ AddHtmlAttributeValue("", 3309, foto.Caminho, 3309, 13, false);
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(3970, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6f19a24338444f4bed8a4f172e7d4aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20bc9da3443c4757b657be2c7ffbcdb4", async() => {
                 BeginContext(4040, 9, true);
                 WriteLiteral("Atualizar");
                 EndContext();
